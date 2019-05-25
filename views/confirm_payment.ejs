@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LTIL</title>
+    <link rel="stylesheet" href="signupstyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/animate.css">
+    <link rel="shortcut icon" href="images/bg8.jpg">
+</head>
+<body style="background: url('images/bg8.jpg')">
+    <div align="center" style="font-weight: bold">
+        Transaction of Ten thousand naira is successful.
+    </div>
+    <div align="center" style="font-style: italic">
+        Your payment has been confirmed!
+    </div>
+    <div class="input-group mb-3 animated rollIn col-lg-4 mt-5 offset-5">
+        <input type="text" class="font-weight-bold form-control" readonly name="" aria-label="" aria-describedby="basic-addon2" value= "<%=rider_total %>" >
+        <div class="input-group-append">
+            <span class="input-group-text font-weight-bold" id="basic-addon2">Rider's Total</span>
+        </div>
+    </div>
+    <div class="input-group mb-3 animated rollIn col-lg-4 offset-1">
+        <input type="text" class="form-control font-weight-bold" readonly name="" aria-label="" aria-describedby="basic-addon2" value= "<%=company_total %>" >
+        <div class="input-group-append">
+            <span class="input-group-text font-weight-bold" id="basic-addon2">Company's Total</span>
+        </div>
+    </div>
+    <div class="row p-5" style="background: #58800D; margin-top: 230px; font-size: 25px;">
+        <div class="col-5 offset-1">
+            <a href="/payment" style="color: white">Continue Payment</a>
+        </div>
+        <div class="col-3 offset-3">
+            <a href="/" style="color: white">Home</a>
+        </div>
+    </div>
+    
+</body>
+</html>
