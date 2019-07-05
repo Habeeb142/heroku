@@ -52,31 +52,6 @@ app.get('/bvn', (req,res)=>{
     res.render('index_bvn');
 });
 
-//payment_index::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-app.get('/payment', (req,res)=>{
-    res.render('index_payment', {status: null});
-});
-
-//problem_solution::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-app.get('/solution', (req,res)=>{
-    res.render('solution_problem');
-});
-
-//payment now::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-let company = rider = [];
-app.post('/pay', (req,res)=>{
-    if(req.body.card_num == "" || req.body.card_cvv == "" || req.body.card_exp == ""){
-        res.render('index_payment', {status: 'error'});
-    }
-    else{
-        company.push(5000);
-        rider.push(5000);
-        company_total = company.length/2 * 5000;
-        rider_total = rider.length/2 * 5000;
-        res.render('confirm_payment', {rider_total: rider_total, company_total: company_total})
-    }     
-});
-
 app.get('/process', (req,res)=>{
     res.render('process', { bvn_num: null, status: null })
 });
